@@ -1,0 +1,56 @@
+*{
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.bold{
+  display: block;
+  width: 55%;
+  padding: 10px;
+  margin: auto;
+  background-color: black;
+}
+
+.bold img{
+  width: 100%;
+}
+
+.thumb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb li{
+  width: 15%;
+  cursor: pointer;
+  padding: 15px;
+  margin: 1%;
+}
+
+.thumb li img{
+  width: 100%;
+}
+
+
+/* Slideshow animation */
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bold:nth-child(1) {
+  animation: slideshow 12s infinite;
+}
